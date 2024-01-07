@@ -1,0 +1,24 @@
+.navLink{
+    display: flex;
+    padding: 0px 8px;
+}
+
+.navLink > span{
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+}
+
+img{
+    width: 160px;
+    height: 50px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 8px;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,29 @@
+video{
+    display: block;
+    width: 300px;
+    height: 100%;
+    gap: 10px;
+    object-fit: cover;
+}
+
+.hightlightCont{
+    gap:20px; overflow: scroll;}
+
+.hightlightCont > div{
+    width: 300px;
+    height: 350px;  
+}
+
+.title{
+    font-size: 40px;
+    /* margin: 0px 0px 8px 0px; */
+    padding-top: 50px ;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.bg-ivory{
+    background-color: rgba(236, 230, 219, 0.288);
+}
