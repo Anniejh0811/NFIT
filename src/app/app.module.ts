@@ -10,6 +10,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { MembershipComponent } from './membership/membership.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProgramsComponent } from './programs/programs.component';
+import { MembershipTempComponent } from './membership-temp/membership-temp.component';
+import { MembersBenefitComponent } from './members-benefit/members-benefit.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     HighlightsComponent,
     MembershipComponent,
-    FooterComponent
+    FooterComponent,
+    ProgramsComponent,
+    MembershipTempComponent,
+    MembersBenefitComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

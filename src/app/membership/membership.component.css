@@ -8,7 +8,8 @@
 }
 
 .membershipCont{
-    padding: 50px 80px;
+    padding: 50px 120px;
+    /* max-width: 1200px; */
 }
 
 .eachCont{

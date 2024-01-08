@@ -20,27 +20,18 @@
     text-align: center;
 }
 
-.title{
-    font-size: 35px;
-    margin: 0px 0px 8px 0px;
-}
 
-.content{
-    font-size: 25px;
-}
 
-.accent{
-    color:#FE2E60;
-}
+
+
+
 
 .innerToOuter{
-    background-color: #FFE5EA;
-    padding: 50px 80px;
+    background-color: #ffe5ea8f;
+    padding: 50px 120px;
 }
 
-.bold{
-    font-weight: 600;
-}
+
 
 .workoutStage{
     height: auto;
@@ -99,6 +90,7 @@
     height: 100%;
     display: block;
     align-self: center;
+    border-radius: 20px;
   }
 
 .review_cont{
@@ -135,6 +127,10 @@ fa-icon{
     color: #ff7e98;
 }
 
-.name{
-    color: gray;
+
+
+div{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }

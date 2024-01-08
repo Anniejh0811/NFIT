@@ -1,7 +1,8 @@
 .footerCont{
     background-color: #FFE5EA;
     padding-top: 30px;
-    padding-bottom: 30px;
+    max-width: 100%;
+    /* padding-bottom: 30px; */
 }
 
 .navLink{
@@ -26,9 +27,13 @@ img{
 }
 
 span{
-    color: rgba(0, 0, 0, 0.503);
+    color: rgba(0, 0, 0, 0.606);
 }
 
 .footerNav{
     gap: 10px;
+}
+
+.copyRight{
+    font-size: 12px;
 }
