@@ -2,6 +2,10 @@
 
 
   @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;500;600;700&family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Eczar:wght@400;500;600;700;800&family=Engagement&family=Grechen+Fuemen&family=Inika:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+
 
 body{
     font-family: "Eczar";

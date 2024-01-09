@@ -1,11 +1,11 @@
 <div>
     <img style="width: 100%; height: 350px; margin-left: auto; margin-right: auto; border-radius: 0px;" src="../../assets/HomeBannerRe.png" alt="">
-   <div class="homeCont">
+   <div class="compCont text-center">
         <span>THE</span>
         <span class="title">&FIT EXPERIENCE</span>
         <span class="content">&Fit is a 45-minute, high-intensity, indoor and outdoor, cardio/weight workout. Our signature classes are designed to strengthen your mind, body and soul with instructors who will coach you through distinct sections of climbs, sprints, choreography, weights and our iconic moment.</span>
    </div>
-   <div class="innerToOuter">
+   <div class="compCont bg_pink">
         <span class="title accent bold">WE CARE FROM INNER TO OUTER</span>
         <span class="content">&Fit helps you build your body from inner core with pilates/yoga to outer muscles with cardio and weight training on your fitness level.</span>
         <div class='image-grid'>
@@ -30,26 +30,24 @@
             </div>
             <div class="stage">
                 <img src="../../assets/weight.jpeg">
-            </div>
-            
-            
+            </div>            
         </div>
    </div>
-   <div class="homeCont commentsCont">
+   <div class="compCont text-center">
         <span>&FIT</span>
         <span class="title bold">HEAR FROM OUR MEMBERS</span>
 
         <div class="image-grid comments">   
             <div *ngFor="let comment of comments" class='image-grid review_cont'>
-                <div class="star_box">
+                <div class="d-flex justify-content-center mb-1">
                     <div *ngFor="let item of fakeArray(comment.stars);">
                         <fa-icon [icon]="faCoffee"></fa-icon>
                     </div>
                 </div>
-                <div class="box_middle">
+                <div>
                     <span>{{comment.content}}</span>
                 </div>
-                <div class="box_middle">
+                <div>
                     <span class="gray">{{comment.name}}</span>
                 </div>
             </div>

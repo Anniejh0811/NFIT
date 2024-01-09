@@ -5,64 +5,12 @@
 	height: 0;
 	width: 125px;
 }
-* {
-    box-sizing: border-box;
-  }
-.homeCont{
-    padding: 16px;
-    margin: 60px 120px;
-   
-    /* display: flex;
-    flex-direction: column; */
-}
-
-.homeCont > span{
-    text-align: center;
-}
-
-
-
-
-
-
-
-.innerToOuter{
-    background-color: #ffe5ea8f;
-    padding: 50px 120px;
-}
-
-
-
-.workoutStage{
-    height: auto;
-    width: 100%;
-    font-size: 0px;
-    /* display: flex; */
-    display: inline-flex;
-    overflow-y: auto;
-    
-    
-}
-
-.workoutStage>img{
-    width: 100%;
-    align-items: center;
-}
-
-
-
- 
-
-  
-
   .image-grid {
     display: flex;
     width: 100%;
     margin: 16px 0px;
     /* border: 5px solid red; */
   }
-
-
 
   .image-grid >div.stage{
     width: 25%;
@@ -75,17 +23,7 @@
     width: 8%;
   }
 
-    
-  .image-grid >div.star{
-    width: auto;
-    height: auto;
-  }
-
-
-
   img {
-    /* max-width:100%; */
-    /* height: 300px; */
     width: 100%;
     height: 100%;
     display: block;
@@ -110,24 +48,9 @@
     justify-content: center;
 }
 
-.star_box{
-    display: flex; justify-content: center;
-    margin-bottom: 4px;
-}
-.box_middle{
-    text-align: center;
-    margin: 8px;
-}
-
-.homeCont.commentsCont{
-    margin: 50px 80px;
-}
-
 fa-icon{
     color: #ff7e98;
 }
-
-
 
 div{
     max-width: 1300px;

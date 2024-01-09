@@ -1,0 +1,57 @@
+<div class="compCont">
+    <span class="title bold">Find &FIT Studio Near You.</span>
+    <span class="subTitle">Welcome to &Fit, your partner for science-based workout near you! With thousands of studios in the US and abroad, you can easily find perfect location for your excercise needs.</span>
+    <div class="d-flex justify-content-between mt-4">
+
+</div>
+
+
+
+<div class="forms">
+  <div class="template-driven-form">
+
+  
+    <form #form="ngForm" (ngSubmit)="submitTemplateForm(form.value)">
+      <div class="container">
+        <div class="ng-autocomplete">
+
+
+
+<ng-autocomplete #ngAutoCompleteStatic
+  [(ngModel)]="name"
+  [initialValue]=""
+  name="name"
+  [data]="data"
+  [searchKeyword]="keyword"
+  placeholder="Select country"
+  (selected)='selectEvent($event)'
+  (inputChanged)='onChangeSearch($event)'
+  [itemTemplate]="itemTemplateStatic"
+  [notFoundTemplate]="notFoundTemplate">                                 
+</ng-autocomplete>
+
+          <ng-template #itemTemplateStatic let-item>
+            <a [innerHTML]="item.name"></a>
+          </ng-template>
+
+          <ng-template #notFoundTemplate let-notFound>
+            <div [innerHTML]="notFound"></div>
+          </ng-template>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+      </div>
+      <pre>{{ form.value | json }}</pre>
+    </form>
+  </div>
+    <div class="my-google-map">
+        <google-map
+        [options]="mapOptions">
+            <map-marker *ngFor="let marker of markers"
+                [position]="marker.position"></map-marker>
+        </google-map>
+    </div>
+
+
+
+
+
