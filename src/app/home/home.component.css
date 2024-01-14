@@ -1,9 +1,10 @@
 .trapezoid {
-	border-bottom: 50px solid #555;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
+	border-bottom: 350px solid rgba(157, 154, 154, 0.868);
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
 	height: 0;
-	width: 125px;
+	width: 500px;
+    position: absolute; top: 100px;
 }
   .image-grid {
     display: flex;
@@ -57,3 +58,63 @@ div{
     margin-left: auto;
     margin-right: auto;
 }
+
+.autocomplete-container{
+    position: absolute !important;
+}
+
+ng-autocomplete{
+    /* width: 300px; */
+    display: block;
+    
+}
+
+.ng-autocomplete{
+    width: 100%;
+    padding: 0px 8px;
+    /* display: block; */
+    
+}
+
+.resultCont{
+    padding: 16px;
+    margin-top: 20px;
+    border: 1px solid #fbb6c4;
+    border-radius: 5px;
+    background: #FFF;   
+    }
+    
+    .address1{
+        margin: 0px;
+        font-size: 14px;
+    }
+    
+    .name{
+        margin: 0px;
+    }
+    
+    fa-icon{
+        font-size: 14px;
+    }
+    
+    .button{
+        border-radius: 30px;
+        border: 2px solid rgba(255, 158, 177, 0.85);
+        
+        padding: 8px;
+        width: 45%;
+        text-align: center;
+    }
+    
+    /* .bg_pink{
+        background-color: rgba(255, 158, 177, 0.85);;
+    
+    } */
+
+    form > span{
+        text-align: center; font-size: 20px; font-weight: bold; color: #ffffff;
+    }
+
+    .homeBillboard{
+        width: 100%; height: 350px; margin-left: auto; margin-right: auto; border-radius: 0px;
+    }

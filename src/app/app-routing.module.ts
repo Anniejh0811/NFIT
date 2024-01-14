@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ClassesComponent } from './classes/classes.component';
+import { FreeClassFormComponent } from './free-class-form/free-class-form.component';
 import { HomeComponent } from './home/home.component';
 import { MembershipTempComponent } from './membership-temp/membership-temp.component';
 import { ProgramsComponent } from './programs/programs.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'about', component:AboutComponent},
   {path: 'classes', component:ClassesComponent},
   {path: 'studios', component:StudioesComponent},
+  {path: 'freeClass', component:FreeClassFormComponent},
   {path: '**', component:HomeComponent, pathMatch:'full'},
   
 ];

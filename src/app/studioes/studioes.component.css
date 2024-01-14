@@ -1,3 +1,44 @@
 .ng-autocomplete {
     /* width: 35%; */
+    width: 400px;
+    
 }
+
+form{
+    margin-right: 80px;
+    /* display: block; */
+}
+
+.resultCont{
+padding: 16px;
+margin-top: 16px;
+border: 1px solid #fbb6c4;
+border-radius: 5px;
+}
+
+.address1{
+    margin: 0px;
+    font-size: 14px;
+}
+
+.name{
+    margin: 0px;
+}
+
+fa-icon{
+    font-size: 14px;
+}
+
+.button{
+    border-radius: 30px;
+    border: 2px solid rgba(255, 158, 177, 0.85);
+    /* background: #FFF; */
+    padding: 8px;
+    width: 45%;
+    text-align: center;
+}
+
+/* .bg_pink{
+    background-color: rgba(255, 158, 177, 0.85);;
+
+} */

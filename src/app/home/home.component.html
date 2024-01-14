@@ -1,6 +1,53 @@
 <div>
-    <img style="width: 100%; height: 350px; margin-left: auto; margin-right: auto; border-radius: 0px;" src="../../assets/HomeBannerRe.png" alt="">
-   <div class="compCont text-center">
+    <div class="d-flex justify-content-center">
+    <img class="homeBillboard" src="../../assets/homeBanner.png" alt="">
+    <div class="trapezoid">
+        <form #form="ngForm" (ngSubmit)="submitTemplateForm(form.value)" class="pt-4">
+            <span>Find Your Studio</span>
+            <div class="ng-autocomplete">
+                <ng-autocomplete #ngAutoCompleteStatic
+                [(ngModel)]="name"
+                [initialValue]=""
+                name="name"
+                [data]="data"
+                [searchKeyword]="keyword"
+                placeholder="Select Studio"
+                (selected)='selectEvent($event)'
+                (inputChanged)='onChangeSearch($event)'
+                (inputCleared)='onInputClear()'
+                [itemTemplate]="itemTemplateStatic"
+                [notFoundTemplate]="notFoundTemplate">                                 
+                </ng-autocomplete>
+                <ng-template #itemTemplateStatic let-item>
+                    <a [innerHTML]="item.name"></a>
+                </ng-template>
+                <ng-template #notFoundTemplate let-notFound>
+                    <div [innerHTML]="notFound"></div>
+                </ng-template>
+            </div>
+            <div class="resultCont" *ngIf="result">
+                <span class="name fs-5">{{form.value.name.name}}</span>
+                <div class="d-flex">
+                    <span class="address1">{{form.value.name.address1}},&nbsp;</span>
+                    <span class="address1">{{form.value.name.city}},&nbsp;</span>
+                    <span class="address1">{{form.value.name.state}}</span>
+                </div>
+                <span><fa-icon [icon]="faPhone"></fa-icon>
+                    {{form.value.name.phoneNumber}}</span>
+                <div class="d-flex justify-content-between">
+                    <span class="button" [routerLink]="['/freeClass']">Try Free Class</span>
+                    <span class="button bg_pink" [routerLink]="['/membership']">Join Now</span>
+                </div>
+              </div>
+              
+            <!-- <pre>{{ form.value | json }}</pre> -->
+          </form></div>
+
+          
+    </div>  
+    
+
+    <div class="compCont text-center">
         <span>THE</span>
         <span class="title">&FIT EXPERIENCE</span>
         <span class="content">&Fit is a 45-minute, high-intensity, indoor and outdoor, cardio/weight workout. Our signature classes are designed to strengthen your mind, body and soul with instructors who will coach you through distinct sections of climbs, sprints, choreography, weights and our iconic moment.</span>

@@ -1,0 +1,23 @@
+<div class="mx-auto" style="max-width: 70%;" >
+    <img class="mx-auto d-block" src="../../assets/NFItLogo.png">
+    <span class="text-center">Try Your First Class</span>
+    
+    <form #form="ngForm" (ngSubmit)="submiFreeClassForm(form.value)">
+        <label>First Name</label>
+        <input placeholder="First Name" name = 'fistName' ngModel type="text">
+        <label>Last Name</label>
+        <input placeholder="Last Name" name = 'lastName' ngModel type="text">
+        <label>Phone Number</label>
+        <input placeholder="Phone Number" name = 'phoneNumber' ngModel type="number">
+        <label>E-Mail</label>
+        <input placeholder="E-Mail" name = 'email' ngModel type="email">
+        <label>Date</label>
+        <input type="date" name = 'date' ngModel>
+        <button>SUBMIT</button>
+    </form>
+
+
+</div>
+
+
+

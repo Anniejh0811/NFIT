@@ -1,0 +1,40 @@
+input{
+    display: block;
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+label{
+    padding: 8px 0px;
+    font-size: 18px;
+    text-align: left;
+    width: 70%;
+}
+
+button{
+    border-radius: 30px;
+    /* border: 2px solid rgba(255, 158, 177, 0.85); */
+    border: white;
+    background-color: rgba(255, 158, 177, 0.85);;
+    color: white;
+    padding: 8px;
+    width: 45%;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+form{
+    margin: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+span{
+    margin-top: 16px;
+    font-size: 24px;
+    /* font-weight: bold; */
+}

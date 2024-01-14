@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { ClassesComponent } from './classes/classes.component';
 import { StudioesComponent } from './studioes/studioes.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FreeClassFormComponent } from './free-class-form/free-class-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     ClassesComponent,
     StudioesComponent,
+    FreeClassFormComponent,
   ],
   imports: [
     BrowserModule,
